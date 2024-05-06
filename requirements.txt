@@ -1,8 +1,8 @@
 pydriller
 tqdm
 pandas
-scikit-learn>=0.24.2
+scikit-learn>=0.24.1
 GitPython
-prince
+prince>=0.6.0
 nltk
 numpy

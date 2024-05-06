@@ -112,6 +112,36 @@ Several parameters are available in the visualization :
 
 
 
+### installation on ubuntu docker
 
+```
+docker run -it --rm --name ubuntu -p 88:8000 ubuntu:20.04 /bin/bash
+```
+
+1. https://phoenixnap.com/kb/how-to-install-python-3-ubuntu
+2. https://forums.docker.com/t/how-to-create-ubuntu-container-with-port-exposed-so-that-other-person-can-use-the-container/46522
+3. https://pypi.org/project/prince/0.6.2/
+4. https://pypi.org/project/scikit-learn/0.24.1/
+
+```
+python3 -m venv venv
+source venv/bin/activate
+make setup
+```
+
+### run on local docker
+
+```
+docker build -t eagle
+docker run -p 8000:8000 -e url=https://user:pass@github.com/repository.git eagle
+```
+
+### stop the container
+``` 
+docker rm container_id -f 
+```
+
+### important notes
+connect with vpn to avoid ssl error in browser
 
 
