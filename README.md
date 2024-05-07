@@ -136,6 +136,12 @@ docker build -t eagle .
 docker run -p 8000:8000 -e url=https://user:pass@github.com/repository.git eagle
 ```
 
+### run on remote docker
+
+```
+docker run -p 8000:8000 -e url=https://user:pass@github.com/repository.git ninjafx/eagle
+```
+
 ### stop the container
 ``` 
 docker rm container_id -f 
